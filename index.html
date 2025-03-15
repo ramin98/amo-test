@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amoCRM Deals</title>
+  <link href="/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .status-circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .loading-spinner {
+      display: none;
+      text-align: center;
+      padding: 10px;
+    }
+    .deal-details td {
+      background-color: #f8f9fa;
+    }
+    #deals-table-body tr {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Сделки amoCRM</h1>
+    <table class="table table-striped" id="dealsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Название сделки</th>
+          <th>Бюджет</th>
+          <th>Контакт</th>
+          <th>Телефон</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
+      <tbody id="deals-table-body"></tbody>
+    </table>
+    <div id="errorLog" class="text-danger mt-3"></div>
+  </div>
+
+  <script src="/script.js">
+   
+  </script>
+</body>
+</html>
